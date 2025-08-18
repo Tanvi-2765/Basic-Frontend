@@ -1,0 +1,87 @@
+/* styles.css */
+
+/* Reset some basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Body styling */
+body {
+  background-color: #f9f9f9;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+/* Main container */
+.container {
+  background-color: #434141;
+  padding: 20px;
+  border-radius: 8px;
+  width: 350px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+.container h1 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* Input + Button */
+.input-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.input-container input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.input-container button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.input-container button:hover {
+  background-color: #45a049;
+}
+
+/* To-do list styling */
+#todo-list {
+  list-style: none;
+}
+
+#todo-list li {
+  padding: 8px;
+  background-color: #1a1a1a;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#todo-list li.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+#todo-list li button {
+  background-color: transparent;
+  border: none;
+  color: red;
+  cursor: pointer;
+}
